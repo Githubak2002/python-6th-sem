@@ -1,0 +1,3 @@
+this is a string
+char c h a r
+number 1 2 3 4
