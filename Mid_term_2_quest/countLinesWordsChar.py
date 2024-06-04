@@ -14,7 +14,7 @@ def countLinesWordsChar(file_path,lines,words,chars):
     return lines, words, chars
 
 print("==============\n")
-file_path = "countLinesWordsChar.txt"
+file_path = "Mid_term_2_quest/countLinesWordsChar.txt"
 words = chars = lines = 0
 lines, words, chars = countLinesWordsChar(file_path,lines,words,chars)
 print(f"No of lines in the file : {lines}")

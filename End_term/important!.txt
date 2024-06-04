@@ -1,0 +1,106 @@
+# help function
+import math
+
+
+# help(len)
+help(math.sqrt)     # return the square root of x
+# help(greet)
+
+
+############## ----- Split v/s Slice v/s strip ----- ##############
+
+split() - divide a string into multiple substrings based on a specified separator, returns a list of strings. 
+
+strip() - remove leading and trailing whitespace from a string
+
+# Example : Using split() with multiple separators
+text = "Hello,World,Python"
+words = text.split(",")
+print(words)  # Output: ['Hello', 'World', 'Python']
+
+# Example : Using strip() with multiple separators
+text = "   Hello, World, Python   "
+clean_text = text.strip()
+print(clean_text)  # Output: 'Hello, World, Python'
+
+
+############## ----- LIST || TUPLE || SET || DICTONARY ----- ##############
+List
+A list in Python is an ordered, mutable collection of elements. Lists can contain elements of different data types.
+python
+# Creating a list
+fruits = ['apple', 'banana', 'cherry']
+numbers = [1, 2, 3, 4, 5]
+mixed_list = [42, 3.14, 'hello', True]
+
+print(fruits)     # Output: ['apple', 'banana', 'cherry']
+print(numbers)    # Output: [1, 2, 3, 4, 5]
+print(mixed_list) # Output: [42, 3.14, 'hello', True]
+
+Tuple
+A tuple is an ordered, immutable collection of elements. Tuples are similar to lists, but they cannot be modified after creation.
+python
+# Creating a tuple
+point = (2, 3)
+person = ('Alice', 25, 'Engineer')
+
+print(point)     # Output: (2, 3)
+print(person)    # Output: ('Alice', 25, 'Engineer')
+
+Set
+A set is an unordered collection of unique elements. Sets are mutable, but the elements within a set must be immutable.
+python
+# Creating a set
+colors = {'red', 'green', 'blue'}
+unique_numbers = {1, 2, 3, 2, 4}
+
+print(colors)     # Output: {'blue', 'green', 'red'}
+print(unique_numbers) # Output: {1, 2, 3, 4}
+
+Dictionary
+A dictionary in Python is an unordered collection of key-value pairs. Dictionaries are mutable, and the keys must be unique and immutable.
+python
+# Creating a dictionary
+person_info = {
+    'name': 'Alice',
+    'age': 25,
+    'occupation': 'Engineer'
+}
+
+print(person_info)  # Output: {'name': 'Alice', 'age': 25, 'occupation': 'Engineer'}
+
+Differences between List, Tuple, Set, and Dictionary
+Mutability:
+Lists and dictionaries are mutable, meaning their elements can be modified after creation.
+Tuples are immutable, meaning their elements cannot be modified after creation.
+Sets are mutable, but the elements within a set must be immutable.
+
+Order:
+Lists and tuples maintain the order of their elements.
+Sets are unordered, and the order of their elements is not guaranteed.
+Dictionaries are ordered in Python 3.7 and later versions, but were unordered in earlier versions.
+
+Uniqueness:
+Lists and tuples allow duplicate elements.
+Sets only allow unique elements.
+Dictionaries allow duplicate values, but their keys must be unique.
+
+Syntax:
+Lists use square brackets [], tuples use parentheses (), sets use curly braces {}, and dictionaries use curly braces {} with key-value pairs.
+
+Indexing:
+Lists and tuples use integer-based indexing starting from 0.
+Sets do not have an index-based mechanism.
+Dictionaries use key-based indexing.
+
+Adding and Deleting Elements:
+Lists can add new elements using the append() method and remove elements using the pop() or remove() methods.
+Tuples, being immutable, cannot add or remove elements.
+Sets can add new elements using the add() method and remove elements using the pop() method.
+Dictionaries can add new key-value pairs and remove elements using the pop() method.
+
+Sorting:
+Lists can be sorted using the sort() method.
+Tuples, being immutable, cannot be sorted.
+Sets are unordered, so sorting is not applicable.
+Dictionaries can have their keys sorted using the sorted() function.

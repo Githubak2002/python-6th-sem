@@ -7,6 +7,7 @@ def basicFun():
   print(math.sqrt(4))
   print(21/4)     # 5.25
   print(21//4)    # 5 - floor division
+  print(23//4)    # 5 - floor division
   print("Printing 1 to 4 using for loop and range")
   for x in  range(5):
     print(x)              # 1 2 3 4 
@@ -41,6 +42,8 @@ print(f"hello {naam} your age is {age}\n")
 # basicFun()
 # basicDataSruct()
 stringFun()
+
+
 
 
 

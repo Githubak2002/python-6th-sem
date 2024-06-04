@@ -3,6 +3,8 @@
 # open - syntax var = open("path",mode='m')
 # m - r(read),w(write),a(append),x(create and open in write mode)
 
+# HELP!
+# help(len) || help(math.sqrt) || help(greet) 
 
 filePath = "fileBasic.txt"
 
@@ -22,3 +24,4 @@ print("Reading the content of the file:")
 print(lol)
 
 f.close()
+
